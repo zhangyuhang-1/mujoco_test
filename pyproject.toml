@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dualstack-mujoco"
+version = "0.1.0"
+description = "A reproducible MuJoCo dual Panda contact stacking benchmark"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "mujoco==3.17.0",
+  "mink==0.0.13",
+  "daqp==0.7.2",
+  "qpsolvers==4.11.0",
+  "numpy==2.4.6",
+  "scipy==1.17.0",
+  "h5py==3.15.1",
+  "imageio==2.37.2",
+  "imageio-ffmpeg==0.6.0",
+  "pillow==12.1.0",
+  "pytest==9.0.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

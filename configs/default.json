@@ -1,0 +1,26 @@
+{
+  "physics_dt": 0.002,
+  "control_dt": 0.02,
+  "max_time": 25.0,
+  "active_arm": "left",
+  "random": false,
+  "a_xy": [0.0, -0.38],
+  "b_xy": [0.20, -0.30],
+  "random_xy": [0.025, 0.025],
+  "random_yaw": 0.12,
+  "sample_attempts": 100,
+  "table_top": 0.75,
+  "a_half_size": 0.025,
+  "b_half_size": 0.035,
+  "a_mass": 0.06,
+  "contact_friction": [1.3, 0.01, 0.001],
+  "images": false,
+  "resolution": [256, 256],
+  "policy": "dualstack.policies.scripted_stack:ScriptedStack",
+  "cameras": {
+    "overview": {"name": "overview", "pos": "1.55 -1.9 1.85", "xyaxes": "0.78 0.63 0 -0.28 0.35 0.89", "fovy": "52"},
+    "left_wrist": {"name": "left_wrist", "pos": "0.07 0 .015", "xyaxes": "0 1 0 1 0 0", "fovy": "75"},
+    "right_wrist": {"name": "right_wrist", "pos": "-0.08 0 .03", "xyaxes": "0 1 0 .61 0 .79", "fovy": "75"}
+  },
+  "success": {"xy_margin": 0.004, "height_tolerance": 0.006, "tilt_radians": 0.15, "linear_speed": 0.025, "angular_speed": 0.15, "gripper_clearance": 0.09, "open_width": 0.065, "hold_seconds": 0.5}
+}
